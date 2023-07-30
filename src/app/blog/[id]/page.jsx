@@ -5,17 +5,17 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { useSession } from "next-auth/react";
 
-async function getData(id) {
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
-    cache: "no-store",
-  });
+// async function getData(id) {
+//   const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+//     cache: "no-store",
+//   });
 
-  if (!res.ok) {
-    return notFound();
-  }
+//   if (!res.ok) {
+//     return notFound();
+//   }
 
-  return res.json();
-}
+//   return res.json();
+// }
 
 // export async function generateMetadata({ params }) {
 //   const post = await getData(params.id);
